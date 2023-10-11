@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/dialog_forgot">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:drawableLeft="@drawable/ic_baseline_notifications_none_24"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="Forgot password"
+                android:textColor="@color/background"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Enter your email address"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.38"
+                app:layout_constraintStart_toStartOf="@+id/dialog_title"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+            <EditText
+                android:id="@+id/dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColor="@color/primary"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/desc"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="@+id/desc"
+                app:layout_constraintTop_toBottomOf="@+id/desc"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="110dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="0dp"
+                android:text="Cancel"
+                android:textSize="14sp"
+                app:cornerRadius="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.122"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_name"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="110dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:padding="0dp"
+                android:text="Reset"
+                android:textSize="14sp"
+                app:cornerRadius="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.855"
+                app:layout_constraintStart_toEndOf="@+id/btncancel"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313150791186",
+    "project_id": "vote-df055",
+    "storage_bucket": "vote-df055.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313150791186:android:c589120baf038dba7f82cb",
+        "android_client_info": {
+          "package_name": "com.company.evote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313150791186-08rcabduqrc578g8okk7dtbsd4o7rhus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9gHH7Mjf_MlvVAcMekilwOLsWad3Zz2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313150791186-08rcabduqrc578g8okk7dtbsd4o7rhus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

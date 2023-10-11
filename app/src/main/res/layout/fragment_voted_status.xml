@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotedStatusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Voted"
+            android:textColor="@color/selected"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_baseline_error_outline_24"
+            android:drawableTint="@color/selected"
+            android:drawablePadding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="You have already voted."
+            android:textColor="@color/default_text_color"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:text="Please wait for results."
+            android:textColor="@color/default_text_color"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+</FrameLayout>

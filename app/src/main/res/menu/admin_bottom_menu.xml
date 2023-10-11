@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:title="Applicants"
+        android:id="@+id/applicants"
+        android:icon="@drawable/ic_baseline_assignment_24"/>
+    <item android:title="Dates"
+        android:id="@+id/dates"
+        android:icon="@drawable/ic_baseline_calendar_month_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+</menu>

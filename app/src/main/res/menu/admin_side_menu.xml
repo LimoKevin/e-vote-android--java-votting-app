@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:title="home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item android:id="@+id/applicants"
+            android:title="Applicants"
+            android:icon="@drawable/ic_baseline_assignment_24"/>
+
+        <item android:id="@+id/dates"
+            android:title="Dates"
+            android:icon="@drawable/ic_baseline_calendar_month_24"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/share"
+                android:title="Share"
+                android:icon="@android:drawable/ic_menu_share"/>
+
+            <item android:id="@+id/send"
+                android:title="Send"
+                android:icon="@android:drawable/ic_menu_send"/>
+        </menu>
+    </item>
+</menu>

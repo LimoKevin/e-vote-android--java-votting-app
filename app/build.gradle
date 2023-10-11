@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+    buildToolsVersion "33.0.1"
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    defaultConfig {
+        applicationId "com.company.evote"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures{
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+
+    implementation 'org.apache.commons:commons-text:1.9'
+    //Add those line in dependencies
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+
+    //for shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    //for googleauthenticator
+    implementation 'com.warrenstrange:googleauth:1.4.0'
+    // For qr code
+    implementation 'com.google.zxing:core:3.4.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+}

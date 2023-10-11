@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+<!--    <item android:title="Opinion Polls"-->
+<!--        android:id="@+id/opolls"-->
+<!--        android:icon="@drawable/ic_baseline_bar_chart_24"/>-->
+    <item android:title="Vote"
+        android:id="@+id/vote"
+        android:icon="@drawable/ic_baseline_how_to_vote_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+    <item android:title="Help"
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_help_outline_24"/>
+</menu>
